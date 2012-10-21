@@ -1,1 +1,11 @@
+.DS_Store
 example-spring-template/target
+example-spring-template/.DS_Store
+example-spring-template/.classpath
+example-spring-template/.project
+example-spring-template/.settings/
+example-spring-scheduling/target
+example-spring-scheduling/.DS_Store
+example-spring-scheduling/.classpath
+example-spring-scheduling/.project
+example-spring-scheduling/.settings/

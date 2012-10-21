@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/task 
+       http://www.springframework.org/schema/task/spring-task-3.0.xsd
+       ">
+
+	<bean id="taskSchedulerSimple" class="org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler">
+		<property name="poolSize" value="5" />
+	</bean>
+
+	<bean id="receiveMailSimpleService" class="de.bruns.example.spring.scheduling.simple.ReceiveMailSimpleService">
+		<constructor-arg ref="taskSchedulerSimple"></constructor-arg>
+	</bean>
+
+</beans>
