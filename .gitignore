@@ -9,3 +9,8 @@ example-spring-scheduling/.DS_Store
 example-spring-scheduling/.classpath
 example-spring-scheduling/.project
 example-spring-scheduling/.settings/
+example-freemarker-exception/target
+example-freemarker-exception/.DS_Store
+example-freemarker-exception/.classpath
+example-freemarker-exception/.project
+example-freemarker-exception/.settings/
