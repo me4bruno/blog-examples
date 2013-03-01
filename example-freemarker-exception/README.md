@@ -1,0 +1,1 @@
+Blog: http://me4bruno.wordpress.com/2013/02/28/freemarker-behandlung-von-undefinierten-werten

@@ -25,10 +25,10 @@ public class FreemarkerExceptionExample {
 				}
 			}
 		};
-		exceptionHandler = TemplateExceptionHandler.DEBUG_HANDLER;
-		exceptionHandler = TemplateExceptionHandler.HTML_DEBUG_HANDLER;
-		exceptionHandler = TemplateExceptionHandler.RETHROW_HANDLER;
-		exceptionHandler = TemplateExceptionHandler.IGNORE_HANDLER;
+//		exceptionHandler = TemplateExceptionHandler.DEBUG_HANDLER;
+//		exceptionHandler = TemplateExceptionHandler.HTML_DEBUG_HANDLER;
+//		exceptionHandler = TemplateExceptionHandler.RETHROW_HANDLER;
+//		exceptionHandler = TemplateExceptionHandler.IGNORE_HANDLER;
 
 		Configuration configuration = new Configuration();
 		configuration.setClassForTemplateLoading(FreemarkerExceptionExample.class, "");
@@ -41,7 +41,7 @@ public class FreemarkerExceptionExample {
 
 		Map<String, Object> personModel = new HashMap<String, Object>();
 		personModel.put("name", "Homer Simpson");
-		personModel.put("address", addressModel);
+		// personModel.put("address", addressModel);
 
 		Template temp = configuration.getTemplate("template.ftl");
 		Writer out = new OutputStreamWriter(System.out);
