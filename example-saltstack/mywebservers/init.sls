@@ -28,16 +28,15 @@ apache2:
     - watch:
       - file: /etc/apache2/sites-available/default
 
+a2enmod proxy proxy_ajp:
+  cmd:
+    - run
+    - require:
+      - pkg: apache2
+
 /etc/apache2/sites-available/default:
   file:
     - managed
     - source: salt://mywebservers/apache/sites-available/default
-    - require:
-      - pkg: apache2
-
-/var/www/index.html:
-  file:
-    - managed
-    - source: salt://mywebservers/apache/index.html
     - require:
       - pkg: apache2
