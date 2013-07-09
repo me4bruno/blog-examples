@@ -1,0 +1,1 @@
+Blog: http://me4bruno.wordpress.com/2013/07/10/rest-schnittstelle-in-javascript-mit-node-js
