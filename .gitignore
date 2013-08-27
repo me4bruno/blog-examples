@@ -14,3 +14,9 @@ example-freemarker-exception/.DS_Store
 example-freemarker-exception/.classpath
 example-freemarker-exception/.project
 example-freemarker-exception/.settings/
+example-lucene/target
+example-lucene/.DS_Store
+example-lucene/.classpath
+example-lucene/.project
+example-lucene/.settings/
+example-lucene/AkwIndex/
