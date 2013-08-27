@@ -1,0 +1,1 @@
+Blog: http://me4bruno.wordpress.com/2013/08/28/lucene-volltextsuche-leicht-gemacht
