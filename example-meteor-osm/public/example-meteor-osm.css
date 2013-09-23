@@ -1,0 +1,72 @@
+html,body,#map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+ 
+#map {
+    background: #ddd;
+}
+ 
+#votes {
+    margin: 0;
+    font-size: larger;
+    background: #ddd;
+ 
+    position:fixed;
+    top:60px;
+    left:60px;
+    border:5px solid #777777;
+    width: 400px;
+    z-index: 1000;
+}
+ 
+#votes th input {
+    margin: 10px 5px;
+}
+ 
+#votes th input.name {
+    width: 90%;
+}
+ 
+#votes td {
+    padding: 10px;
+}
+ 
+#votes td.name {
+    width: 120px;
+    max-width: 120px;
+}
+ 
+#votes td.party {
+    width: 60px;
+}
+ 
+#votes td.date {
+    width: 220px;
+    text-align: right;
+}
+ 
+.CDU {
+    background: #aaa;
+}
+ 
+.FDP {
+    background: #ff4;
+}
+ 
+.SPD {
+    background: #f44;
+}
+ 
+.Gruene {
+    background: #4f4;
+}
+ 
+.Linke {
+    background: #d4d;
+}
+ 
+.Piraten {
+    background: #fa4;
+}

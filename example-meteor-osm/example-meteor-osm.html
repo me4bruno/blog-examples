@@ -1,0 +1,61 @@
+<head>
+  <title>example-meteor-osm</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="example-meteor-osm.css" type="text/css">
+  <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css">
+  <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+</head>
+ 
+<body>
+  {{> map}}
+  {{> election}}
+</body>
+ 
+<template name="map">
+  {{#constant}}
+  <div id="map"/>
+  {{/constant}}
+</template>
+ 
+<template name="election">
+    <table id="votes">
+      <tr>
+        <th>
+          <input type="text" class="name" name="name" placeholder="Mein Name" size="10" />
+        </th>
+        <th>
+          <select class="party" name="party" size="1">
+            <option value="CDU">CDU</option>
+            <option value="SPD">SPD</option>
+            <option value="Gruene">Grüne</option>
+            <option value="FDP">FDP</option>
+            <option value="Linke">Linke</option>
+            <option value="Piraten">Piraten</option>
+          </select>
+        </th>
+        <th>
+          <select class="location" name="location" size="1">
+            <option value="10;53.5">Hamburg</option>
+            <option value="8.8;53.05">Bremen</option>
+            <option value="13.4;52.5">Berlin</option>
+            <option value="7;50.95">Köln</option>
+            <option value="8.7;50.1">Frankfurt</option>
+            <option value="12.4;51.35">Leipzig</option>
+            <option value="11.5;48.15">München</option>
+          </select>
+          <input type="button" class="add" value="Wählen" />
+        </th>
+      </tr>
+      {{#each votes}}
+        {{> vote}}
+      {{/each}}
+    </table>
+</template>
+ 
+<template name="vote">
+  <tr class="vote {{party}}">
+    <td class="name">{{name}}</td>
+    <td class="party">{{party}}</td>
+    <td class="date">{{prettifyDate created}}</td>
+  </tr>
+</template>
