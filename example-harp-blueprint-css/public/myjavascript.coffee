@@ -1,0 +1,2 @@
+doAlert = () ->
+  alert("Javascript-Alert")

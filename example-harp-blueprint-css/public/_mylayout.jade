@@ -1,0 +1,39 @@
+doctype
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="blueprint/screen.css", type="text/css", media="screen, projection")
+    link(rel="stylesheet", href="blueprint/print.css", type="text/css", media="print")
+    //if lt IE 8
+      link(rel="stylesheet", href="blueprint/ie.css", type="text/css", media="screen, projection")
+    link(rel="stylesheet", href="mystyle.css", type="text/css", media="screen, projection")
+    title
+      block title
+    script( type="text/javascript", src="myjavascript.js")
+  body
+    .container
+      #header.span-24.last
+        h1 Header: Example Blueprint CSS
+        .info(onclick='doAlert()') Blueprint ist ein tolles CSS-Framework
+      #navigation.span-6
+        h3 Navigation
+        ul
+          li
+            a(href="") Link 1
+          li
+            a(href="") Link 2
+          li
+            a(href="") Link 3      
+      #content.span-12
+        block content
+      #sidebar.span-6.last
+        h3 Sidebar
+        ol
+          li
+            a(href="") Artikel 1
+          li
+            a(href="") Artikel 2
+          li
+            a(href="") Artikel 3      
+      #footer.span-24.last       
+        | Footer: Ein wunderschöner Footer mit Blueprint CSS.
