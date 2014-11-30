@@ -1,0 +1,1 @@
+Blog: http://andreas-bruns.com/2014/11/30/openstreetmap-daten-abfragen-mit-der-overpass-api
