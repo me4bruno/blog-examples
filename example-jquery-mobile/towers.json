@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1",
+    "name": "Burj Khalifa",
+    "height": "830",
+    "city": "Dubai",
+    "state": "Vereinigte Arabische Emirate",
+    "year": "2010",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/de/thumb/9/93/Burj_Khalifa.jpg/245px-Burj_Khalifa.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Tōkyō Sky Tree",
+    "height": "634",
+    "city": "Tokio",
+    "state": "Japan",
+    "year": "2012",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tokyo_Sky_Tree_2012.JPG/200px-Tokyo_Sky_Tree_2012.JPG"
+  },
+  {
+    "id": "3",
+    "name": "Shanghai Tower",
+    "height": "632",
+    "city": "Shanghai",
+    "state": "Volksrepublik China",
+    "year": "2014",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shanghai_Tower_July_2014_-_1.jpg/245px-Shanghai_Tower_July_2014_-_1.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Mecca Royal Clock Tower Hotel",
+    "height": "601",
+    "city": "Mekka",
+    "state": "Saudi-Arabien",
+    "year": "2012",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/de/thumb/f/f4/Abraj-al-Bait-Towers.JPG/245px-Abraj-al-Bait-Towers.JPG"
+  },
+  {
+    "id": "5",
+    "name": "Canton Tower",
+    "height": "600",
+    "city": "Guangzhou",
+    "state": "Volksrepublik China",
+    "year": "2010",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Guangzhou_Tower.jpg/200px-Guangzhou_Tower.jpg"
+  },
+  {
+    "id": "6",
+    "name": "CN Tower",
+    "height": "553",
+    "city": "Toronto",
+    "state": "Kanada",
+    "year": "1976",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Toronto_-_ON_-_CN_Tower_%28Bremner_Blvd%29.jpg/143px-Toronto_-_ON_-_CN_Tower_%28Bremner_Blvd%29.jpg"
+  },
+  {
+    "id": "7",
+    "name": "One World Trade Center",
+    "height": "541",
+    "city": "New York City",
+    "state": "Vereinigte Staaten",
+    "year": "2014",
+    "location": [40.713, -74.0135],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Freedom_Tower_Russell_cropped.jpg/245px-Freedom_Tower_Russell_cropped.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Ostankino-Turm",
+    "height": "537",
+    "city": "Moskau",
+    "state": "Russland",
+    "year": "1967",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BB%D0%B5%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%28Ostankino-Tower%29.JPG/195px-%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BB%D0%B5%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%28Ostankino-Tower%29.JPG"
+  },
+  {
+    "id": "9",
+    "name": "Willis Tower",
+    "height": "527",
+    "city": "Chicago",
+    "state": "Vereinigte Staaten",
+    "year": "1974",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Willis_Tower_%28Chicago%29_30.05.2015.JPG/245px-Willis_Tower_%28Chicago%29_30.05.2015.JPG"
+  },
+  {
+    "id": "10",
+    "name": "World Trade Center",
+    "height": "527",
+    "city": "New York City",
+    "state": "Vereinigte Staaten",
+    "year": "1972",
+    "location": [0, 0],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/World_Trade_Center%2C_New_York_City_-_aerial_view_%28March_2001%29.jpg/245px-World_Trade_Center%2C_New_York_City_-_aerial_view_%28March_2001%29.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Empire State Building",
+    "height": "443",
+    "city": "New York City",
+    "state": "Vereinigte Staaten",
+    "year": "1931",
+    "location": [40.748417, -73.985833],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Empire_State_Building_from_the_Top_of_the_Rock.jpg/245px-Empire_State_Building_from_the_Top_of_the_Rock.jpg"
+  },
+  {
+    "id": "43",
+    "name": "Fernsehturm Berlin",
+    "height": "368",
+    "city": "Berlin",
+    "state": "Deutschland",
+    "year": "1969",
+    "location": [52.520803, 13.40945],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Berlin_-_Berliner_Fernsehturm1.jpg/113px-Berlin_-_Berliner_Fernsehturm1.jpg"
+  },
+  {
+    "id": "60",
+    "name": "Europaturm",
+    "height": "337",
+    "city": "Frankfurt am Main",
+    "state": "Deutschland",
+    "year": "1979",
+    "location": [50.1353, 8.654681],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Frankfurt_Am_Main-Europaturm-Ansicht_vom_Messeturm-20130525.jpg/200px-Frankfurt_Am_Main-Europaturm-Ansicht_vom_Messeturm-20130525.jpg"
+  },
+  {
+    "id": "76",
+    "name": "Eiffelturm",
+    "height": "324",
+    "city": "Paris",
+    "state": "Frankreich",
+    "year": "1889",
+    "location": [48.858222, 2.2945],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/162px-Tour_Eiffel_Wikimedia_Commons.jpg"
+  },
+  {
+    "id": "98",
+    "name": "Schornstein des Kraftwerks Buschhaus",
+    "height": "307",
+    "city": "Schöningen",
+    "state": "Deutschland",
+    "year": "1985",
+    "location": [52.171826, 10.976715],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Kraftwerk_Buschhaus_Luftbild_%282007%29.JPG/300px-Kraftwerk_Buschhaus_Luftbild_%282007%29.JPG"
+  },
+  {
+    "id": "107",
+    "name": "Kamin Heizkraftwerk Chemnitz-Nord",
+    "height": "302",
+    "city": "Chemnitz",
+    "state": "Deutschland",
+    "year": "1983",
+    "location": [50.857778, 12.923889],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Chemnitz-HKW.jpg/300px-Chemnitz-HKW.jpg"
+  },
+  {
+    "id": "112",
+    "name": "Commerzbank Tower",
+    "height": "300",
+    "city": "Frankfurt am Mai",
+    "state": "Deutschland",
+    "year": "1997",
+    "location": [50.110833, 8.674167],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Frankfurt_Am_Main-Commerzbank_Tower_vom_Rathenauplatz-20100808.jpg/245px-Frankfurt_Am_Main-Commerzbank_Tower_vom_Rathenauplatz-20100808.jpg"
+  }
+]
