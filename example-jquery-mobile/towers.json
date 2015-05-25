@@ -6,7 +6,7 @@
     "city": "Dubai",
     "state": "Vereinigte Arabische Emirate",
     "year": "2010",
-    "location": [0, 0],
+    "location": [25.197222, 55.274167],
     "image": "https://upload.wikimedia.org/wikipedia/de/thumb/9/93/Burj_Khalifa.jpg/245px-Burj_Khalifa.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "city": "Tokio",
     "state": "Japan",
     "year": "2012",
-    "location": [0, 0],
+    "location": [35.709947, 139.810853],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tokyo_Sky_Tree_2012.JPG/200px-Tokyo_Sky_Tree_2012.JPG"
   },
   {
@@ -26,7 +26,7 @@
     "city": "Shanghai",
     "state": "Volksrepublik China",
     "year": "2014",
-    "location": [0, 0],
+    "location": [31.235556, 121.500556],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shanghai_Tower_July_2014_-_1.jpg/245px-Shanghai_Tower_July_2014_-_1.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "city": "Mekka",
     "state": "Saudi-Arabien",
     "year": "2012",
-    "location": [0, 0],
+    "location": [21.418889, 39.826389],
     "image": "https://upload.wikimedia.org/wikipedia/de/thumb/f/f4/Abraj-al-Bait-Towers.JPG/245px-Abraj-al-Bait-Towers.JPG"
   },
   {
@@ -46,7 +46,7 @@
     "city": "Guangzhou",
     "state": "Volksrepublik China",
     "year": "2010",
-    "location": [0, 0],
+    "location": [23.109028, 113.319056],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Guangzhou_Tower.jpg/200px-Guangzhou_Tower.jpg"
   },
   {
@@ -56,7 +56,7 @@
     "city": "Toronto",
     "state": "Kanada",
     "year": "1976",
-    "location": [0, 0],
+    "location": [43.642564, -79.387058],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Toronto_-_ON_-_CN_Tower_%28Bremner_Blvd%29.jpg/143px-Toronto_-_ON_-_CN_Tower_%28Bremner_Blvd%29.jpg"
   },
   {
@@ -76,7 +76,7 @@
     "city": "Moskau",
     "state": "Russland",
     "year": "1967",
-    "location": [0, 0],
+    "location": [55.819722, 37.611667],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BB%D0%B5%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%28Ostankino-Tower%29.JPG/195px-%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BB%D0%B5%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%28Ostankino-Tower%29.JPG"
   },
   {
@@ -86,7 +86,7 @@
     "city": "Chicago",
     "state": "Vereinigte Staaten",
     "year": "1974",
-    "location": [0, 0],
+    "location": [41.878611, -87.635833],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Willis_Tower_%28Chicago%29_30.05.2015.JPG/245px-Willis_Tower_%28Chicago%29_30.05.2015.JPG"
   },
   {
@@ -96,7 +96,7 @@
     "city": "New York City",
     "state": "Vereinigte Staaten",
     "year": "1972",
-    "location": [0, 0],
+    "location": [40.711667, -74.013611],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/World_Trade_Center%2C_New_York_City_-_aerial_view_%28March_2001%29.jpg/245px-World_Trade_Center%2C_New_York_City_-_aerial_view_%28March_2001%29.jpg"
   },
   {

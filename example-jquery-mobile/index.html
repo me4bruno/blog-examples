@@ -124,7 +124,7 @@
   </div>
 
   <div role="main" class="ui-content map-content">
-    <div id="mapElement">Das ist hier eine Karte</div>
+    <div id="mapElement"></div>
   </div>
 
   <div data-role="footer" data-position="fixed">
@@ -188,35 +188,19 @@
 
   $(document).on('pageinit', '#map', function(){
     map = L.map('mapElement');
-
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      minZoom: 2,
       maxZoom: 18,
       attribution: 'Example made by <a href="http://www.gajotres.net">Gajotres</a>'
     }).addTo(map);
-
     marker = L.marker([0,0]).addTo(map);
-
-//    map.on('locationfound', onLocationFound);
-//    map.on('locationerror', onLocationError);
-//    map.locate({setView: true, maxZoom: 18});
-//    L.control.locate().addTo(map);
   });
 
   $(document).on('pageshow', '#map', function (e, data) {
+    $(window).resize();
     map.setView(selectedTower.location, 14);
-    marker.setLatLng(selectedTower.location)
+    marker.setLatLng(selectedTower.location);
   });
-
-  function onLocationFound(e) {
-    var radius = e.accuracy / 2;
-    L.marker(e.latlng).addTo(map).bindPopup("You are within " + radius + " meters from this point").openPopup();
-    L.circle(e.latlng, radius).addTo(map);
-  }
-
-  function onLocationError(e) {
-    alert(e.message);
-  }
-
 
   getTowerById = function(allTowers, id) {
     for (var i=0; i<allTowers.length; i++) {
