@@ -4,18 +4,10 @@
   <title>Example JQuery Mobile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="libs/jquery-mobile/jquery.mobile-1.4.5.css" />
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="libs/leaflet/leaflet-0.7.3.css" />
   <script src="libs/jquery/jquery-2.1.4.js"></script>
   <script src="libs/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
-
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.min.css" />
-  <!--[if lt IE 9]>
-  <link rel="stylesheet" href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.ie.min.css"/>
-  <![endif]-->
-  <script src="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.min.js" ></script>
-
+  <script src="libs/leaflet/leaflet-0.7.3.js"></script>
 
   <style>
     .ui-content.map-content {
@@ -68,15 +60,12 @@
         <a href="#image" class="imageLink" data-rel="popup" data-position-to="window" data-transition="pop">Tower</a>
       </li>
      </ul>
-    <div data-role="popup" id="image" data-overlay-theme="b" data-theme="b">
-      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-      <img id="popupImage" src="https://upload.wikimedia.org/wikipedia/de/thumb/9/93/Burj_Khalifa.jpg/245px-Burj_Khalifa.jpg">
-    </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
     <div data-role="navbar" data-iconpos="bottom">
       <ul>
-        <li><a href="#towers" data-icon="grid" class="ui-btn-active">T&uuml;rme</a></li>
-        <li><a href="#details" data-icon="star">Informationen</a></li>
-        <li><a href="#map" data-icon="gear">Karte</a></li>
+        <li><a href="#towers" data-icon="bullets" class="ui-btn-active ui-state-persist">T&uuml;rme</a></li>
+        <li><a href="#settings" data-icon="gear">Einstellungen</a></li>
       </ul>
     </div>
   </div>
@@ -87,13 +76,15 @@
   <div data-role="header" data-position="fixed">
     <a href="#towers" data-icon="arrow-l">T&uuml;rme</a>
     <h1>Eiffelturm</h1>
-    <a href="#map" data-icon="grid">Karte</a>
+    <a href="#map" data-icon="location">Karte</a>
   </div>
   <div role="main" class="ui-content">
     <dl id="towerData">
       <dt>Name</dt>
       <dd id="towerName">Eiffelturm</dd>
-      <dt>Höhe</dt>
+      <dt>Platz</dt>
+      <dd id="towerScore">76</dd>
+      <dt>H&ouml;he</dt>
       <dd id="towerHeight">324</dd>
       <dt>Stadt</dt>
       <dd id="towerCity">Paris</dd>
@@ -101,16 +92,24 @@
       <dd id="towerState">Frankreich</dd>
       <dt>Baujahr</dt>
       <dd id="towerYear">1889</dd>
+      <dt>Preview</dt>
+      <dd>
+        <a href="#popupImageContainer" data-rel="popup" data-position-to="window" data-transition="pop">
+          <img id="towerImageTag" src="https://upload.wikimedia.org/wikipedia/de/thumb/9/93/Burj_Khalifa.jpg/245px-Burj_Khalifa.jpg">
+        </a>
+      </dd>
     </dl>
-    <img id="towerImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Freedom_Tower_Russell_cropped.jpg/245px-Freedom_Tower_Russell_cropped.jpg">
+  </div>
+  <div data-role="popup" id="popupImageContainer" data-overlay-theme="b" data-theme="b">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Ok</a>
+    <img id="popupImage" src="https://upload.wikimedia.org/wikipedia/de/thumb/9/93/Burj_Khalifa.jpg/245px-Burj_Khalifa.jpg">
   </div>
 
   <div data-role="footer" data-position="fixed">
     <div data-role="navbar" data-iconpos="bottom">
       <ul>
-        <li><a href="#towers" data-icon="grid">T&uuml;rme</a></li>
-        <li><a href="#details" data-icon="star" class="ui-btn-active">Informationen</a></li>
-        <li><a href="#map" data-icon="gear">Karte</a></li>
+        <li><a href="#towers" data-icon="bullets" class="ui-btn-active ui-state-persist">T&uuml;rme</a></li>
+        <li><a href="#settings" data-icon="gear">Einstellungen</a></li>
       </ul>
     </div>
   </div>
@@ -130,9 +129,31 @@
   <div data-role="footer" data-position="fixed">
     <div data-role="navbar" data-iconpos="bottom">
       <ul>
-        <li><a href="#towers" data-icon="grid">T&uuml;rme</a></li>
-        <li><a href="#details" data-icon="star">Informationen</a></li>
-        <li><a href="#map" data-icon="gear" class="ui-btn-active">Karte</a></li>
+        <li><a href="#towers" data-icon="bullets" class="ui-btn-active ui-state-persist">T&uuml;rme</a></li>
+        <li><a href="#settings" data-icon="gear">Einstellungen</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="settings">
+  <div data-role="header">
+    <h1>Einstellungen</h1>
+  </div>
+  <div role="main" class="ui-content">
+    <fieldset data-role="controlgroup">
+      <legend>Popup des Markers auf Karte anzeigen:</legend>
+      <input name="popup" id="popup-no" value="no" type="radio">
+      <label for="popup-no">Popup nicht anzeigen</label>
+      <input name="popup" id="popup-yes" value="yes" type="radio" checked="checked">
+      <label for="popup-yes">Popup anzeigen</label>
+    </fieldset>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar" data-iconpos="bottom">
+      <ul>
+        <li><a href="#towers" data-icon="bullets">T&uuml;rme</a></li>
+        <li><a href="#settings" data-icon="gear" class="ui-btn-active ui-state-persist">Einstellungen</a></li>
       </ul>
     </div>
   </div>
@@ -143,13 +164,14 @@
   var selectedTower = null;
   var allTowers = null;
 
+  // Initialisierung der Übersicht-Seite
   $(document).on('pageinit', '#towers', function () {
     $.getJSON("towers.json", function(jsonTowers) {
       allTowers = jsonTowers;
       var towerItems = [];
       for (var i=0; i<jsonTowers.length; i++) {
         var tower = jsonTowers[i];
-        towerItems.push( '<li><a href="#" data-id="' + tower.id + '" class="detailLink"><img src="' + tower.image + '"><h2>' + tower.name + '</h2><p>' + tower.city + ' / ' + tower.state + '</p><span class="ui-li-count">' + tower.height + ' m</span></a><a href="#image" data-id="' + tower.id + '" class="imageLink" data-rel="popup" data-position-to="window" data-transition="pop">Tower</a></li>' );
+        towerItems.push( '<li><a href="#" data-id="' + tower.id + '" class="detailLink"><img src="' + tower.image + '"><h2>' + tower.name + '</h2><p>' + tower.city + ' / ' + tower.state + '</p><span class="ui-li-count">' + tower.height + ' m</span></a></li>' );
       }
       $('#towerList').empty();
       $('#towerList').append( towerItems.join( "" ) );
@@ -157,49 +179,53 @@
     });
   });
 
-  // Transition zu #Details-Seite
+  // Transition zur Detail-Seite
   $(document).on('vclick', '#towerList li a.detailLink', function () {
     var selectedTowerIdAsString = $(this).attr('data-id');
     selectedTower = getTowerById(allTowers, selectedTowerIdAsString);
     $(":mobile-pagecontainer").pagecontainer( "change", "#details", { transition: "slide" } );
   });
 
-  // Transition zu #Details-Seite
-  $(document).on('vclick', '#towerList li a.imageLink', function () {
-    var selectedTowerIdAsString = $(this).attr('data-id');
-    selectedTower = getTowerById(allTowers, selectedTowerIdAsString);
-    $('#popupImage').attr("src",selectedTower.image);
-  });
-
-  // TODO das geht nur beim ersten mal mit 'pagecreate', aber mit 'pageshow' klappt alles
-  // https://api.jquerymobile.com/category/events/
+  // Anzeigen der Detail-Seite
   $(document).on('pageshow', '#details', function (e, data) {
     $('#details h1').text(selectedTower.name);
     $('#details #towerData #towerName').text(selectedTower.name);
+    $('#details #towerData #towerScore').text(selectedTower.id);
     $('#details #towerData #towerHeight').text(selectedTower.height);
     $('#details #towerData #towerCity').text(selectedTower.city);
     $('#details #towerData #towerState').text(selectedTower.state);
     $('#details #towerData #towerYear').text(selectedTower.year);
-    $('#details #towerImage').attr("src",selectedTower.image);
+    $('#details #towerImageTag').animate({width: "20%"}, {duration: 0}).attr("src",selectedTower.image);
+    $('#details #popupImage').attr("src",selectedTower.image);
   });
 
+  // Initialisierung der Karten-Seite
   var map = null;
   var marker = null;
-
+  var popup = null;
   $(document).on('pageinit', '#map', function(){
     map = L.map('mapElement');
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       minZoom: 2,
       maxZoom: 18,
-      attribution: 'Example made by <a href="http://www.gajotres.net">Gajotres</a>'
+      attribution: 'Beispiel JQuery Mobile von <a href="http://andreas-bruns.com">Andreas Bruns</a>'
     }).addTo(map);
     marker = L.marker([0,0]).addTo(map);
+    marker.bindPopup();
   });
 
+  // Anzeigen der Karten-Seite
   $(document).on('pageshow', '#map', function (e, data) {
     $(window).resize();
     map.setView(selectedTower.location, 14);
     marker.setLatLng(selectedTower.location);
+    marker.getPopup().setContent("<b>" + selectedTower.name + "</b><br>H&ouml;he: " + selectedTower.height + " m");
+    var showPopup = $("#settings #popup-yes").prop('checked');
+    if (showPopup) {
+      marker.openPopup();
+    } else {
+      marker.closePopup();
+    }
   });
 
   getTowerById = function(allTowers, id) {
