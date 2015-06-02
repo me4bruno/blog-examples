@@ -216,7 +216,7 @@
 
   // Anzeigen der Karten-Seite
   $(document).on('pageshow', '#map', function (e, data) {
-    $(window).resize();
+    recalculateMapSize();
     map.setView(selectedTower.location, 14);
     marker.setLatLng(selectedTower.location);
     marker.getPopup().setContent("<b>" + selectedTower.name + "</b><br>H&ouml;he: " + selectedTower.height + " m");
@@ -228,7 +228,15 @@
     }
   });
 
-  getTowerById = function(allTowers, id) {
+  function recalculateMapSize() {
+    // Nutzung der gesamten Höhe in Desktop-Browsern
+    $(window).resize();
+    // Vermeidung von grauen Tiles in Mobile-Browsern
+    // https://groups.google.com/forum/#!topic/leaflet-js/Br-gY0aJ5Dc
+    map.invalidateSize(false);
+  };
+
+  function getTowerById(allTowers, id) {
     for (var i=0; i<allTowers.length; i++) {
       if (allTowers[i].id === id) {
         return allTowers[i];
