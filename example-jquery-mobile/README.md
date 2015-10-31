@@ -1,0 +1,1 @@
+Blog: http://andreas-bruns.com/2015/10/31/web-applikationen-erstellen-mit-jquery-mobile/
