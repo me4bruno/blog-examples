@@ -1,0 +1,7 @@
+New log file opened at Wed Jul 06 23:05:16 CEST 2016 by 38391@Uranus.fritz.box
+Taking next connection to: 49790
+New client attempting to connect on port: 49791-49790
+  Address = /192.168.178.21:49790
+This client on port 49791 has uuid 42367bad-6303-4df7-842f-d589ef572c62 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-42367bad-6303-4df7-842f-d589ef572c62
+Taking next connection to: 49790

@@ -1,0 +1,49 @@
+@(users: List[User], userForm: Form[User])
+
+@main("Benutzer-Beispiel") {
+
+	<style>
+		dt, dd {
+		    display: inline;
+		}
+	</style>
+	
+   	@if(flash.containsKey("success")){
+		<div id="globalMessageSuccess" class="alert alert-success">
+			@flash.get("success")
+		</div>
+	}
+
+	<h2>Benutzer</h2>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			@for(user <- users) {
+				<tr>
+					<td>@user.getName()</td>
+					<td>@user.getEmail()</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+	<h2>Benutzer anlegen</h2>
+	
+	@if(userForm.hasGlobalErrors) {
+		<div class="form-group">
+			<div id="globalFormError" role="alert">@userForm.globalError.message</div>
+		</div>
+	}
+	
+	@helper.form(action = controllers.routes.UserController.create()) {
+		@helper.inputText(userForm("name"), '_label -> "Name", '_showConstraints -> false)
+   		@helper.inputText(userForm("email"), '_label -> "Email", '_showConstraints -> false)  
+		<input type="submit" value="Benutzer erstellen">
+	}
+			
+}
