@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://repository.mulesoft.org/nexus/content/repositories/public"
+    }
+}
+
+dependencies {
+    implementation group: 'org.mapsforge', name: 'mapsforge-core', version: '0.13.0'
+    implementation group: 'org.mapsforge', name: 'mapsforge-map-awt', version: '0.13.0'
+    implementation group: 'org.mapsforge', name: 'mapsforge-themes', version: '0.13.0'
+    implementation group: 'com.github.blackears', name: 'svgSalamander', version: 'v1.1.1'
+}
+
+// create a fat-jar
+jar {
+    manifest {
+        attributes(
+          'Main-Class': 'de.bruns.example.mapsforge.App'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
